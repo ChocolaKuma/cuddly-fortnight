@@ -6,8 +6,8 @@ $CookieKillDate = $CookieKillDate->getTimestamp();
 
 if(isset($_COOKIE['page'])){
 	
-	if($_COOKIE['page'] <= $maxPage){
-$curpage = $_COOKIE['page'] + 1;
+	if($_COOKIE['page'] >= $minPage){
+$curpage = $_COOKIE['page'] - 1;
 setcookie("page",$curpage, $CookieKillDate);}
 };
 

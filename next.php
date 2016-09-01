@@ -6,11 +6,11 @@ $CookieKillDate = $CookieKillDate->getTimestamp();
 
 if(isset($_COOKIE['page'])){
 	
-	if($_COOKIE['page'] <= $maxPage){
+	if($_COOKIE['page'] <= 29){
 $curpage = $_COOKIE['page'] + 1;
 setcookie("page",$curpage, $CookieKillDate);}
 };
 
-header( 'Location: /html/VN/mangareader/' )
+header( 'Location: /html/VN/mangareader/reader.php' )
 
 ?>

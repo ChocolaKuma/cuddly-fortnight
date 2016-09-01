@@ -11,6 +11,7 @@ $curpage = $_COOKIE['page'] - 1;
 setcookie("page",$curpage, $CookieKillDate);}
 };
 
-header( 'Location: /html/VN/mangareader/' )
+header( 'Location: /html/VN/mangareader/reader.php' )
+
 
 ?>

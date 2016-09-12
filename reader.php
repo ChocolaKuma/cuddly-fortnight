@@ -1,9 +1,9 @@
 <?PHP
-$DIRECT = "books/mayochikiVol1/";
-$bookname = "MayoChiki1-page-";
-$minPage = 1;
-$maxPage = 346;
-$imgFormat = ".jpg";
+$DIRECT = $_COOKIE['direct'];
+$bookname = $_COOKIE['bookname'];
+$minPage = $_COOKIE['minPage'];
+$maxPage = $_COOKIE['maxPage'];
+$imgFormat = $_COOKIE['format'];
 $curpage = 0;
 $HowLong = "+ 5 Days";
 $CookieKillDate = new DateTime($HowLong);
